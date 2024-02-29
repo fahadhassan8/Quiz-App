@@ -24,6 +24,10 @@ html{
     background-color: #fff;
     padding: 0rem 7rem;
 }
+                        /* front page CSS */
+.first-page{
+    display: none;
+}
 .smit-icon > img{
     width: 100px;
 }
@@ -84,6 +88,36 @@ hr{
     margin-top: 1em;
     background-color: #fff;
 }
+        /* END */
+                    /* Second Page CSS */
+.subject-span{
+    font-size:1.6rem ;
+}
+.hr-gap-2nd-sec{
+    margin-top: 2.5rem;
+}
+.accordion-item:first-of-type .accordion-button {
+    background-color: #e5e6e7 !important;
+    font-size: 1.5rem;
+}
+.accordion-button:not(.collapsed){
+    color: #6c757d;
+    font-size: 1.5rem;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0;
+}
+.accordion-item:first-of-type {
+    margin-top: 1.5rem;
+    background-color: #e5e6e7;
+    height: 50px;
+}
+
+        /* END */
+                    /* Quiz Section */
 .main-div{
     width: 100vw;
     min-height: 100vh;
@@ -141,6 +175,9 @@ input{
     display: none;
 }
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +190,7 @@ footer p{
     color: #fff;
     font-size: 1.5rem;
 }
+            /* END */
 @media only screen and (max-width:992px){
     .intro{
         padding: 0 1em;
@@ -177,5 +215,8 @@ footer p{
     }
     .card{
         width: 90%;
+    }
+    footer p{
+        font-size: 1.2rem;
     }
 }
