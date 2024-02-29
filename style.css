@@ -25,9 +25,6 @@ html{
     padding: 0rem 7rem;
 }
                         /* front page CSS */
-.first-page{
-    display: none;
-}
 .smit-icon > img{
     width: 100px;
 }
@@ -88,6 +85,9 @@ hr{
     margin-top: 1em;
     background-color: #fff;
 }
+.first-page{
+    /* display: none; */
+}
         /* END */
                     /* Second Page CSS */
 .subject-span{
@@ -115,7 +115,39 @@ hr{
     background-color: #e5e6e7;
     height: 50px;
 }
-
+.accordion-body h3{
+    color: #6c757d;
+    margin: 1rem;
+    padding: 1.5rem 1em;
+    border-radius: 5px;
+    background-color:#e5e6e7 ;
+}
+.list-group li{
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.quiz-name{
+    color: #0d6db7;
+    font-weight: bold;
+}
+.list-group-item{
+    border: none;
+    display: flex;
+    gap: 10rem;
+}
+.theme-btn {
+    background-color: #0d6db7;
+    color: #fff;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.second-page{
+    display: none;
+}
         /* END */
                     /* Quiz Section */
 .main-div{
@@ -174,9 +206,7 @@ input{
 .main-div{
     display: none;
 }
-footer{
-    position: absolute;
-    bottom: 0;
+.footer{
     width: 100%;
     display: flex;
     align-items: center;
@@ -185,7 +215,7 @@ footer{
     box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
     background-color: #0984e3;
 }
-footer p{
+.footer p{
     margin: 0;
     color: #fff;
     font-size: 1.5rem;

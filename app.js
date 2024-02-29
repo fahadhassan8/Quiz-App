@@ -1,3 +1,18 @@
+let javaScriptBtn = () =>{
+    var javaScriptBtn = document.getElementById('card-button');
+    var firstPage = document.querySelector('.first-page');
+    var secondPage = document.querySelector('.second-page');
+    firstPage.style.display = 'none';
+    secondPage.style.display = 'block';
+}
+let continueBtn = () =>{
+    let themeBtn = document.querySelector('.theme-btn');
+    let quizSection = document.querySelector('.main-div');
+    var secondPage = document.querySelector('.second-page');
+    secondPage.style.display = 'none';
+    quizSection.style.display = 'block';
+}
+
 var quizques = [
     {
         ques: "Q1: What is the full form of HTML?",
