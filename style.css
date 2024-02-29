@@ -15,9 +15,9 @@ html{
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: auto;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
     height: 12vh;
@@ -33,15 +33,57 @@ html{
     gap: 1.2em;
 }
 .student-logo > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
 }
 .student-name{
     font-size: 1.6em;
     color: #0d6db7;
 }
-
+.intro {
+    margin-top: 11em;
+    background-color: #fff;
+}
+.intro > h1{
+    text-transform: capitalize;
+    color: #0d6db7;
+    font-size: 3rem;
+}
+.intro p{
+    font-size: 1.6rem;
+    color: #484e54;
+    margin-top: 0.5em;
+}
+hr{
+    color: #6c757d;
+    margin-top: 0.5em;
+}
+.card{
+    width: 25vw;
+    height: auto;
+    padding: 3em !important;
+    margin-top: 1em !important;
+}
+.card-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.card-subtitle{
+    font-size: 1.6rem;
+    margin-top: 0.5em;
+}
+#card-button{
+    width: 100%;
+    text-transform: capitalize;
+    height: 2.5em;
+    outline: none;
+    border: 1px solid #0d6db7;
+    color: #0d6db7;
+    font-size: 1.5em;
+    margin-top: 1em;
+    background-color: #fff;
+}
 .main-div{
     width: 100vw;
     min-height: 100vh;
@@ -97,4 +139,43 @@ input{
 }
 .main-div{
     display: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    background-color: #0984e3;
+}
+footer p{
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width:992px){
+    .intro{
+        padding: 0 1em;
+    }
+    .card{
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width:769px){
+    .card{
+        margin: auto;
+        width: 50vw;
+    }
+    .navbar{
+        padding: 0rem 1rem;
+    }
+}
+@media only screen and (max-width:572px){
+    .intro{
+        padding: 0 1.5em;
+    }
+    .card{
+        width: 90%;
+    }
 }
