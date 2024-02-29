@@ -5,13 +5,13 @@ let javaScriptBtn = () =>{
     firstPage.style.display = 'none';
     secondPage.style.display = 'block';
 }
-let continueBtn = () =>{
-    let themeBtn = document.querySelector('.theme-btn');
-    let quizSection = document.querySelector('.main-div');
-    var secondPage = document.querySelector('.second-page');
-    secondPage.style.display = 'none';
-    quizSection.style.display = 'block';
-}
+// let continueBtn = () =>{
+//     let themeBtn = document.querySelector('.theme-btn');
+//     let quizSection = document.querySelector('.main-div');
+//     var secondPage = document.querySelector('.second-page');
+//     secondPage.style.display = 'none';
+//     quizSection.style.display = 'block';
+// }
 
 var quizques = [
     {

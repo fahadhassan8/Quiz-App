@@ -85,6 +85,11 @@ hr{
     margin-top: 1em;
     background-color: #fff;
 }
+#card-button:hover{
+    border: 1px solid #fff;
+    background-color: #0d6db7;
+    color: #fff;
+}
 .first-page{
     /* display: none; */
 }
@@ -145,6 +150,10 @@ hr{
     border: none;
     cursor: pointer;
 }
+.theme-btn:hover {
+    color: #fff;
+    background-color: #408cc5;
+}
 .second-page{
     display: none;
 }
@@ -203,9 +212,7 @@ input{
 .scoreArea{
     display: none;
 }
-.main-div{
-    display: none;
-}
+
 .footer{
     width: 100%;
     display: flex;
@@ -228,6 +235,9 @@ input{
     .card{
         width: 35vw;
     }
+    .inner-div{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:769px){
@@ -248,5 +258,23 @@ input{
     }
     footer p{
         font-size: 1.2rem;
+    }
+    #submit, .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:432px){
+    .inner-div{
+        width: 80%;
+        margin: auto;
+    }
+    .inner-div h2{
+        font-size: 1.8rem;
+        margin: 0.6em 0rem ;
+    }
+    .inner-div li{
+        font-weight: 800;
+        font-size: 1.03rem;
     }
 }
