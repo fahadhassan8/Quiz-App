@@ -256,7 +256,7 @@ input{
     .card{
         width: 90%;
     }
-    footer p{
+    .footer p{
         font-size: 1.2rem;
     }
     #submit, .btn {
@@ -276,5 +276,8 @@ input{
     .inner-div li{
         font-weight: 800;
         font-size: 1.03rem;
+    }
+    .footer p{
+        font-size: 1rem;
     }
 }
