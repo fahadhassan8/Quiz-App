@@ -1,10 +1,11 @@
-var javaScriptBtn = function () {
+
+let javaScriptBtn = () =>{
     var javaScriptBtn = document.getElementById('card-button');
     var firstPage = document.querySelector('.first-page');
     var secondPage = document.querySelector('.second-page');
     firstPage.style.display = 'none';
     secondPage.style.display = 'block';
-};
+}
 // let continueBtn = () =>{
 //     let themeBtn = document.querySelector('.theme-btn');
 //     let quizSection = document.querySelector('.main-div');
@@ -12,6 +13,7 @@ var javaScriptBtn = function () {
 //     secondPage.style.display = 'none';
 //     quizSection.style.display = 'block';
 // }
+
 var quizques = [
     {
         ques: "Q1: What is the full form of HTML?",
@@ -141,13 +143,15 @@ var loadQuestion = function () {
     option2.innerHTML = quizques[currentQues].b;
     option3.innerHTML = quizques[currentQues].c;
     option4.innerHTML = quizques[currentQues].d;
+
     var radioBtn = document.querySelectorAll('input[type="radio"]');
     for (i = 0; i < radioBtn.length; i++) {
-        radioBtn[i].checked = false;
+        radioBtn[i].checked = false
         // console.log(radioBtn[i].checked);
     }
 };
 loadQuestion();
+
 submit.addEventListener("click", function () {
     currentQues++;
     if (currentQues < quizques.length) {
@@ -157,6 +161,6 @@ submit.addEventListener("click", function () {
         Swal.fire({
             title: "JavaScript Quiz",
             text: "You have finished",
-        });
+          });
     }
 });
