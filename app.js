@@ -171,7 +171,7 @@ loadQuestion();
 
 
 submit.addEventListener("click", function () {
-    currentQues++;
+    // currentQues++;
     if (currentQues < quizques.length) {
         loadQuestion();
     }
