@@ -161,8 +161,8 @@ var loadQuestion = function () {
 
     var radioBtn = document.querySelectorAll('input[type="radio"]');
     for (i = 0; i < radioBtn.length; i++) {
-        // radioBtn[i].checked = false;
-        console.log(radioBtn[i].checked);
+        radioBtn[i].checked = false
+        // console.log(radioBtn[i].checked);
     }
 };
 loadQuestion();
