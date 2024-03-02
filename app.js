@@ -171,7 +171,7 @@ loadQuestion();
 
 
 submit.addEventListener("click", function () {
-    // currentQues++;
+    currentQues++;
     if (currentQues < quizques.length) {
         loadQuestion();
     }
@@ -179,14 +179,3 @@ submit.addEventListener("click", function () {
         alert('you have finished')
     }
 });
-function radioUnchkd() {
-    var radioBtn = document.querySelectorAll('input[type="radio"]');
-    var checked = true;
-    for (var i = 0; i < radioBtn.length; i++) {
-        if (!radioBtn[i].checked) {
-            checked = false;
-            break; // No need to continue loop if one radio button is unchecked
-        }
-    }    
-}
-submit.addEventListener('click', radioUnchkd);

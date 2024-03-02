@@ -266,7 +266,7 @@ input{
 }
 @media only screen and (max-width:432px){
     .inner-div{
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     .inner-div h2{
@@ -275,7 +275,7 @@ input{
     }
     .inner-div li{
         font-weight: 800;
-        font-size: 1.03rem;
+        font-size: 1rem;
     }
     .footer p{
         font-size: 1rem;
