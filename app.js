@@ -158,13 +158,18 @@ var loadQuestion = function () {
     option2.innerHTML = quizques[currentQues].b;
     option3.innerHTML = quizques[currentQues].c;
     option4.innerHTML = quizques[currentQues].d;
+
     var radioBtn = document.querySelectorAll('input[type="radio"]');
     for (i = 0; i < radioBtn.length; i++) {
-        radioBtn[i].checked = false;
+        // radioBtn[i].checked = false;
         console.log(radioBtn[i].checked);
     }
 };
 loadQuestion();
+
+
+
+
 submit.addEventListener("click", function () {
     currentQues++;
     if (currentQues < quizques.length) {
