@@ -171,6 +171,7 @@ submit.addEventListener("click", function () {
         loadQuestion();
     }
     else {
+        alert('you have finished')
     }
 });
 function radioUnchkd() {
@@ -181,9 +182,6 @@ function radioUnchkd() {
             checked = false;
             break; // No need to continue loop if one radio button is unchecked
         }
-    }
-    if (!checked) {
-        Swal.fire("Select Answer");
-    }
+    }    
 }
 submit.addEventListener('click', radioUnchkd);
