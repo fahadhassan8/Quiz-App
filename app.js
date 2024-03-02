@@ -1,3 +1,4 @@
+
 let javaScriptBtn = () =>{
     var javaScriptBtn = document.getElementById('card-button');
     var firstPage = document.querySelector('.first-page');
@@ -91,19 +92,11 @@ var quizques = [
         a: "Defining CSS styles for elements.",
         b: "Creating and initializing objects.",
         c: "Managing database connections.",
-        d: "Controlling user interface animations.",
+        d: "Control user interface animations.",
         ans: "ans2",
     },
     {
-        ques: "Q11: What is the purpose of the 'prototype' property in a constructor function?",
-        a: "To define the constructor's name.",
-        b: "To store private data for the object.",
-        c: "To add methods and properties to all instances of the object.",
-        d: "To prevent the object from being modified.",
-        ans: "ans3",
-    },
-    {
-        ques: "Q12: Which of the following function of Number object returns a string value version of the current number?",
+        ques: "Q11: Which of the following function of Number object returns a string value version of the current number?",
         a: "toString()",
         b: "toFixed()",
         c: "toLocaleString()",
@@ -111,15 +104,7 @@ var quizques = [
         ans: "ans1"
     },
     {
-        ques: "Q13: How do you access a property of an object created with a constructor function?",
-        a: "Using the 'dot' notation (e.g., obj.property).",
-        b: "By calling a separate function with the property name.",
-        c: "With the 'for...in' loop to iterate through properties.",
-        d: "By using the 'prototype' property of the constructor.",
-        ans: "ans1",
-    },
-    {
-        ques: "Q14.: Which of the following function of String object causes a string to be displayed as a superscript, as if it were in a <sup> tag?",
+        ques: "Q12.: Which of the following function of String object causes a string to be displayed as a superscript, as if it were in a <sup> tag?",
         a: "sup()",
         b: "small()",
         c: "strike()",
@@ -127,7 +112,7 @@ var quizques = [
         ans: "ans1"
     },
     {
-        ques: "Q15.Which of the following function of String object creates an HTML anchor that is used as a hypertext target?",
+        ques: "Q13.Which of the following function of String object creates an HTML anchor that is used as a hypertext target?",
         a: "anchor()",
         b: "link()",
         c: "blink()",
@@ -135,7 +120,7 @@ var quizques = [
         ans: "ans2"
     },
     {
-        ques: "Q16: Which keyword is used to create a new instance of an object in JavaScript?",
+        ques: "Q14: Which keyword is used to create a new instance of an object in JavaScript?",
         a: "this",
         b: "new",
         c: "create",
@@ -167,15 +152,15 @@ var loadQuestion = function () {
 };
 loadQuestion();
 
-
-
-
 submit.addEventListener("click", function () {
     currentQues++;
     if (currentQues < quizques.length) {
         loadQuestion();
     }
     else {
-        alert('you have finished')
+        Swal.fire({
+            title: "JavaScript Quiz",
+            text: "You have finished",
+          });
     }
 });

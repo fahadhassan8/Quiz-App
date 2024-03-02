@@ -65,6 +65,7 @@ hr{
     height: auto;
     padding: 3em !important;
     margin-top: 1em !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .card-title{
     font-size: 2.5rem;
@@ -160,7 +161,7 @@ hr{
         /* END */
                     /* Quiz Section */
 .main-div{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: grid;
     place-items: center;
@@ -266,7 +267,7 @@ input{
 }
 @media only screen and (max-width:432px){
     .inner-div{
-        width: 100%;
+        width: 82%;
         margin: auto;
     }
     .inner-div h2{
@@ -278,6 +279,6 @@ input{
         font-size: 1rem;
     }
     .footer p{
-        font-size: 1rem;
+        font-size: 1.03rem;
     }
 }
