@@ -1,166 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMIT - Quiz App</title>
     <link rel="icon" href="./assets/images/smit.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css    ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="navbar">
-        <div class="smit-icon">
-            <img src="./assets/images/smit.png" alt="SMIT-Icon">
-        </div>
-        <div class="student-logo">
-            <img src="./assets/images/img.jpg" alt="">
-            <span class="student-name">Fahad <i class="fa-solid fa-caret-down"></i></span>
-        </div>
-    </header>
-    <div class="first-page">
-    <div class="intro container">
-        <h1>hi, fahad hassan  👋</h1>
-        <p>Welcome to the SMIT's quiz portal. Select your course below to take a quiz.</p>
-        <hr>
-    </div>
-    <div class="main-ui container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Python</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">JavaScript</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
-                      <button onclick="javaScriptBtn()" id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">TypeScript</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Web And Mobile Hybrid App Develpment</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">4 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Web & App Development(Madaris)</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Web & App Rangers</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Generative AI & Chatbot Batch-3</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">CCO</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Module-1 Exam</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Web & Mobile App (ASF)</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
-                      <button id="card-button">join</button>  
-                    </div>
-                  </div>    
-            </div>
-        </div>
-    </div>
-    <br>
-<br>
-<br>
-<br>
-<footer class="footer">
-    <p>Copyright © 2024-25 FAHAD HASSAN
-        | All Rights Reserved</p>
-</footer>
-</div>
-<div class="second-page">
-    <div class="intro container">
-        <h1>JavaScript <span class="subject-span">(1 Subject)</span></h1>
-        <hr class="hr-gap-2nd-sec">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  JavaScript
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <h3>JavaScript Quiz#01</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item"><span class="quiz-name">quiz name</span> <span class="span">JavaScript Quiz#01</span></li>
-                        <hr>
-                        <li class="list-group-item"> <span>total questions</span><span class="span">14</span></li>
-                        <hr>
-                        <li class="list-group-item"><span>total time</span><span class="span">20 mins</span></li>
-                        <hr>
-                        <li class="list-group-item"><span>passing score</span> <span class="span">70</span></li>
-                        <hr>
-                        <li class="list-group-item"><a href="./quiz.html" target="_blank" ><button class="theme-btn">Continue</button></a></li>
-                      </ul>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <section id="main-login-page">
+    <section class="sign-up">
+      <img src="./assets/images/smit.png" alt="">
+      <h1>Signup</h1>
+      <input type="text" id="signup-name" placeholder="Name" /><br />
+      <input type="text" id="signup-email" placeholder="Email" /><br />
+      <input type="password" id="signup-paswrd" placeholder="Password" /><br />
+      <button onclick="sign_up()">Sign Up</button>
+    </section>
+    <section class="login">
+      <img src="./assets/images/smit.png" alt="">
+      <h1>Please Login</h1>
+      <input type="text" id="login-email" placeholder="Email" /><br />
+      <input type="password" id="login-paswrd" placeholder="Password" /><br />
+        <button  onclick="login_page()">Login</button>
+    </section>
+    </section>
+    <section id="Select-Course-Section">
+      <header class="navbar">
+          <div class="smit-icon">
+              <img src="./assets/images/smit.png" alt="SMIT-Icon">
+          </div>
+          <div id="stu-logo" class="student-logo">
+              <img  src="./assets/images/img.jpg" alt="">
+              <span id="stu-name" class="student-name">Fahad <i class="fa-solid fa-caret-down"></i></span>
+          </div>
+      </header>
+      <div class="first-page">
+      <div class="intro container">
+          <h1>hi, <span id="hi-user">fahad hassan</span> 👋</h1>
+          <p>Welcome to the SMIT's quiz portal. Select your course below to take a quiz.</p>
+          <hr>
+      </div>
+      <div class="main-ui container">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+                        <button onclick="javaScriptBtn()" id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">TypeScript</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Web And Mobile Hybrid App Develpment</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">4 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Web & App Development(Madaris)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Web & App Rangers</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Generative AI & Chatbot Batch-3</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">CCO</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">1 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Module-1 Exam</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Web & Mobile App (ASF)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3 Subject</h6>
+                        <button id="card-button">join</button>  
+                      </div>
+                    </div>    
+              </div>
+          </div>
+      </div>
+      <br>
+  <br>
+  <br>
+  <br>
+  <footer class="footer">
+      <p>Copyright © 2024-25 FAHAD HASSAN
+          | All Rights Reserved</p>
+  </footer>
+  </div>
+  <div class="second-page">
+      <div class="intro container">
+          <h1>JavaScript <span class="subject-span">(1 Subject)</span></h1>
+          <hr class="hr-gap-2nd-sec">
+          <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    JavaScript
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <h3>JavaScript Quiz#01</h3>
+                      <ul class="list-group">
+                          <li class="list-group-item"><span class="quiz-name">quiz name</span> <span class="span">JavaScript Quiz#01</span></li>
+                          <hr>
+                          <li class="list-group-item"> <span>total questions</span><span class="span">14</span></li>
+                          <hr>
+                          <li class="list-group-item"><span>total time</span><span class="span">20 mins</span></li>
+                          <hr>
+                          <li class="list-group-item"><span>passing score</span> <span class="span">70</span></li>
+                          <hr>
+                          <li class="list-group-item"><a href="./Quiz-app-folder/quiz.html" target="_blank" ><button class="theme-btn">Continue</button></a></li>
+                        </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-    </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="app.js"></script>
-</body>
+      </div>
+  </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="main.js"></script>
+    <script src="./Quiz-app-folder/quiz.js"></script>
+  </body>
 </html>

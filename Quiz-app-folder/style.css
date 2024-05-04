@@ -1,0 +1,97 @@
+@font-face {
+    font-family:font-regular ;
+    src: url(./assets/fonts/JosefinSans-Regular.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: font-regular;
+    font-weight: 300;
+}
+html{
+    font-size: 62.5%;
+}
+    /* END */
+                    /* Quiz Section */
+.main-div{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(206, 92%, 94%);
+}
+.inner-div{
+    width: 40vw;
+    background-color: #fff;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.inner-div h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 1em 0rem ;
+}
+.inner-div li{
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0.8em 0rem ;
+}
+input{
+    cursor: pointer;
+}
+#submit, .btn {
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #67b3ff;
+    margin-top: 0.5rem;
+}
+#submit, .btn:hover{
+    background-color: #0984e3;
+}
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+.scoreArea{
+    display: none;
+}
+
+            /* END */
+@media only screen and (max-width:992px){
+    .inner-div{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:572px){
+    #submit, .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:432px){
+    .inner-div{
+        width: 82%;
+        margin: auto;
+    }
+    .inner-div h2{
+        font-size: 1.8rem;
+        margin: 0.6em 0rem ;
+    }
+    .inner-div li{
+        font-weight: 800;
+        font-size: 1rem;
+    }
+}

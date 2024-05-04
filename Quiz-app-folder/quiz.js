@@ -126,6 +126,9 @@ var quizques = [
         ans: "ans2",
     },
 ];
+let theme_btn = () =>{
+    window.location.assign('quiz.html')
+}
 var question = document.querySelector(".question");
 var option1 = document.getElementById('option1');
 var option2 = document.getElementById('option2');
